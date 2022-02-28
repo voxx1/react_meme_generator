@@ -5,12 +5,6 @@
 body {
     font-family: "Karla", sans-serif;
     margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-main {
-    padding: 36px;
 }
 
 .header {
@@ -20,7 +14,7 @@ main {
     height: 65px;
     background: linear-gradient(90deg, #1a3b6d 1.18%, #3a81c4 100%);
     color: white;
-    max-width: 700px;
+    width: 600px;
     padding: 20px;
 }
 
@@ -40,26 +34,28 @@ main {
 }
 
 .form {
-    display: grid;
-    grid-template: 40px 40px / 1fr 1fr;
-    gap: 17px;
-    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
 }
 
 .form--input {
     font-family: "Karla", sans-serif;
     border-radius: 5px;
     border: 1px solid #D5D4D8;
+    height: 40px;
+    margin: 10px 0;
     text-indent: 5px;
 }
 
 .form--button {
-    grid-column: 1 / -1;
     font-family: "Karla", sans-serif;
     border-radius: 5px;
     background: linear-gradient(90deg, #1a3b6d 1.18%, #3a81c4 100%);
     color: white;
     border: none;
+    height: 40px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
@@ -68,7 +64,7 @@ main {
 }
 
 .meme--image {
-    max-width: 600px;
+    width: 600px;
     border-radius: 3px;
 }
 
@@ -96,15 +92,57 @@ main {
     top: 0;
 }
 
-@media (max-width: 650px) {
-    body {
-        width: 650px;
-        margin-top: 50px;
-    }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
     .meme--image {
-        max-width: 500px;
+        width: 500px !important;
     }
     header {
-        max-width: 500px;
+        width: 500px !important;
+    }
+    .form {
+        width: 500px !important;
+    }
+    main {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .meme--image {
+        width: 420px !important;
+    }
+    header {
+        width: 420px !important;
+    }
+    .form {
+        width: 420px !important;
+    }
+    main {
+        width: 420px;
+    }
+}
+
+@media (max-width: 499px) {
+    .meme--image {
+        width: 300px !important;
+    }
+    header {
+        width: 300px !important;
+    }
+    .form {
+        width: 300px !important;
+    }
+    main {
+        width: 300px;
+    }
+    .meme--text {
+        font-size: 1.5em;
     }
 }
