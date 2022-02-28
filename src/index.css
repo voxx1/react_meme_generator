@@ -145,4 +145,10 @@ body {
     .meme--text {
         font-size: 1.5em;
     }
+    .header--title {
+        font-size: 1rem;
+    }
+    .header--project {
+        font-size: .5rem
+    }
 }
