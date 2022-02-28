@@ -96,28 +96,15 @@ main {
     top: 0;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 450px) {
     body {
-        width: 650px;
+        width: 450px;
         margin-top: 50px;
     }
     .meme--image {
-        max-width: 500px;
+        max-width: 400px;
     }
     header {
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 380px) {
-    body {
-        width: 380px;
-        margin-top: 50px;
-    }
-    .meme--image {
-        max-width: 280px;
-    }
-    header {
-        max-width: 280px;
+        max-width: 400px;
     }
 }
