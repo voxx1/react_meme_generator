@@ -101,12 +101,10 @@ main {
         width: 650px;
         margin-top: 50px;
     }
-}
-
-@media (max-width: 350px) {
-    body {
-        width: 340px;
-        margin: 0 auto;
-        margin-top: 50px;
+    .meme--image {
+        max-width: 500px;
+    }
+    header {
+        max-width: 500px;
     }
 }
