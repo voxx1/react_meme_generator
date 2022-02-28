@@ -108,3 +108,10 @@ main {
         max-width: 500px;
     }
 }
+
+@media (max-width: 380px) {
+    body {
+        width: 340px;
+        margin-top: 50px;
+    }
+}
