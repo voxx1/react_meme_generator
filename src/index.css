@@ -111,7 +111,20 @@ main {
 
 @media (max-width: 380px) {
     body {
-        width: 340px;
-        margin-top: 50px;
+        width: 370px;
+        margin-top: 30px;
+        margin: 0 auto !important;
+    }
+    .meme--image {
+        width: 370px;
+    }
+    header {
+        width: 405px;
+    }
+    .header--title {
+        font-size: 0.75rem;
+    }
+    .header--project {
+        font-size: 0.6rem;
     }
 }
