@@ -96,25 +96,7 @@ main {
     top: 0;
 }
 
-@media (max-width: 450px) {
-    body {
-        width: 450px;
-        margin-top: 50px;
-    }
-    .meme--image {
-        max-width: 400px;
-    }
-    header {
-        max-width: 400px;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 451px) and (max-width: 650px) {
+@media (max-width: 650px) {
     body {
         width: 650px;
         margin-top: 50px;
