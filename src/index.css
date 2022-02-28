@@ -98,7 +98,7 @@ main {
 
 @media (max-width: 420px) {
     body {
-        width: 400px;
+        width: 420px;
         margin-top: 50px;
     }
     .meme--image {
