@@ -5,6 +5,8 @@
 body {
     font-family: "Karla", sans-serif;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 main {
@@ -109,25 +111,13 @@ main {
 
 @media (max-width: 380px) {
     body {
-        width: 370px;
-        margin-top: 30px;
+        width: 380px;
+        margin-top: 50px;
     }
     .meme--image {
-        width: 370px;
+        max-width: 280px;
     }
     header {
-        width: 405px;
-    }
-    .header--title {
-        font-size: 0.75rem;
-    }
-    .header--project {
-        font-size: 0.6rem;
-    }
-    .wrapper {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        max-width: 280px;
     }
 }
